@@ -27,6 +27,10 @@ node scripts/test-interactions.cjs
 
 Generated page HTML is checked in and can be hosted as static files. No installation or runtime framework is required. Fonts are requested from Google Fonts with local fallbacks; images are hosted locally.
 
+## Vercel deployment
+
+Import the repository with the project Root Directory left at the repository root. `vercel.json` selects the committed `dist` directory as the public output and disables framework detection and the build step. Pushes to `main` deploy the checked-in site. After content edits, run the build and checks above and commit the generated HTML before pushing.
+
 ## Pages
 
 Home, services, sea shipping, air freight, about, shipping guide, locations, contact, shipping quote, FAQs, and a custom 404 document.
